@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating Connection</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Myriad+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #ed1c4f;
+      --blue: #4090ce;
+      --green: #7ec242;
+      --yellow: #e9bf25;
+      --purple: #c96dac;
+      --text-white: #ffffff;
+      --text-yellow: #e9bf25;
+      --bg-blue-dark: #0000358;
+      --bg-blue-light: #005c9f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Myriad Pro', sans-serif;
+      background: linear-gradient(180deg, var(--bg-blue-dark), var(--bg-blue-light));
+      color: var(--text-white);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    header {
+      background-color: transparent;
+      padding: 1rem 0;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: var(--text-yellow);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: var(--text-white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #hero {
+      background: rgba(255, 255, 255, 0.05);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    #hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--text-yellow);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    a.cta {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--yellow);
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>creating <span style="color: var(--text-yellow);">connection</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#events">events</a></li>
+          <li><a href="#regions">regions</a></li>
+          <li><a href="#retreats">retreats</a></li>
+          <li><a href="#facilitators">facilitators</a></li>
+          <li><a href="#groups">groups</a></li>
+          <li><a href="#blog">blog</a></li>
+          <li><a href="#get-involved">get involved</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>living life meaningfully together</h2>
+      <p>events and gatherings that help us connect, explore, and make a difference</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>about creating connection</h2>
+      <p>Creating Connection is a network of more than twenty inclusive communities across Ontario committed to sharing authentic conversation and promoting meaningful activities. Our communities engage in a variety of activities, including: coffee & conversation, adult colouring, drum circles, mindfulness meditation, yoga, lifelong learning & lectures, and knitting circles.</p>
+      <p>All are welcome regardless of background. Participants include individuals from diverse religious traditions, many who consider themselves “spiritual but not religious,” as well as those who identify as agnostic or atheist. We are LGBTQIA affirming.</p>
+      <p>Creating Connection is sponsored by Community of Christ Canada.</p>
+    </div>
+  </section>
+
+  <section id="events">
+    <div class="container">
+      <h2>upcoming events</h2>
+      <div id="eventbrite-widget"></div>
+    </div>
+  </section>
+
+  <section id="regions">
+    <div class="container">
+      <h2>explore events by region</h2>
+      <p><a class="cta" href="#">eastern canada events</a></p>
+      <p><a class="cta" href="#">western canada events</a></p>
+    </div>
+  </section>
+
+  <section id="retreats">
+    <div class="container">
+      <h2>retreats</h2>
+      <p>We host two main retreat types:</p>
+      <ul>
+        <li><strong>Connection Retreats</strong> – primarily in Eastern Canada</li>
+        <li><strong>Nurturing Spirit Retreats</strong> – primarily in Western Canada</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="facilitators">
+    <div class="container">
+      <h2>facilitator resources</h2>
+      <p>Training, downloadable resources, and video tutorials to help you lead effectively.</p>
+      <a class="cta" href="#">go to facilitator portal</a>
+    </div>
+  </section>
+
+  <section id="groups">
+    <div class="container">
+      <h2>explore our groups</h2>
+      <p>See what local groups are doing, view their photo galleries, read their stories of impact, and find upcoming events near you.</p>
+      <a class="cta" href="#">view groups directory</a>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container">
+      <h2>blog & reflections</h2>
+      <p>Read stories, insights, and reflections from our community members and leaders.</p>
+      <a class="cta" href="#">visit the blog</a>
+    </div>
+  </section>
+
+  <section id="get-involved">
+    <div class="container">
+      <h2>get involved</h2>
+      <p>Looking to attend an event, start a group, or access resources? There are many ways to participate.</p>
+      <a class="cta" href="#">interested in starting a group? click here</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>contact us</h2>
+      <p>email: info@creatingconnection.ca</p>
+      <p>follow us on:
+        <a href="#">facebook</a> |
+        <a href="#">instagram</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
